@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Categories from '../layouts/Categories.vue';
 import CoffeeTypes from '../layouts/CoffeeTypes.vue';
 import Hero from '../layouts/Hero.vue';
 import Navbar from '../layouts/Navbar.vue';
@@ -9,4 +10,5 @@ import Navbar from '../layouts/Navbar.vue';
     <Navbar />
     <Hero />
     <CoffeeTypes />
+    <Categories />
 </template>
