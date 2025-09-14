@@ -4,6 +4,8 @@ import CoffeeTypes from '../layouts/CoffeeTypes.vue';
 import Hero from '../layouts/Hero.vue';
 import Navbar from '../layouts/Navbar.vue';
 import Showcase from '../layouts/Showcase.vue';
+import Testimony from '../layouts/Testimony.vue';
+import TestimonyDemo from '../layouts/TestimonyDemo.vue';
 import HeroButton from '../util/HeroButton.vue';
 
 </script>
@@ -16,4 +18,5 @@ import HeroButton from '../util/HeroButton.vue';
     <Showcase>
         <HeroButton href="/sign-up-for-delivery" text="Sign up for Delivery"/>
     </Showcase>
+    <Testimony />
 </template>

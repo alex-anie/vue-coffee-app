@@ -4,7 +4,6 @@
 
     const coffeeFlavours = ref(categories)
 
-    console.log(coffeeFlavours)
 </script>
 
 <template>
