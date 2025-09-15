@@ -9,7 +9,7 @@ export const categories = [
         name: 'Caffè Latte',
         description: 'A creamy Starbucks-style caffè latte in a white ceramic cup and saucer, topped with smooth milk foam art in a rosetta pattern, photographed in soft café lighting.',
         path: '/src/assets/img/categories/caffè-latte.jpeg',
-         price: 43.21
+price: 43.21
     },
     {
         name: 'Cappuccino',

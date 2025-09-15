@@ -4,6 +4,7 @@
     import { ChevronRight, ChevronLeft } from 'lucide-vue-next';
     import 'vue3-carousel/carousel.css';
     import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+    import HeadingSecText from './HeadingSecText.vue';
 
     const testimonials = ref(testimonialsData);
 
@@ -37,11 +38,7 @@
 <template>
     <main class="w-screen py-8 md:-[25em]">
 
-        <!-- Heading text -->
-        <div class="flex flex-col items-center my-5">
-            <h1 class="font-bold text-4xl">Testimony</h1>
-            <p class="flex justify-center mt-2 text-2xl">See what our customers are saying</p>
-        </div>
+        <HeadingSecText text="See what our customers are saying" heading="Testimony" />
 
         <section class="w-[90%] mx-auto">
         
