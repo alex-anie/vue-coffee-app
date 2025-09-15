@@ -1,3 +1,3 @@
 <template>
-    <p>Coffee</p>
+    <p>About page</p>
 </template>

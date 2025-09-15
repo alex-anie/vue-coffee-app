@@ -1,26 +1,23 @@
-<template>
+<script setup>
+    import { RouterLink } from 'vue-router';
+</script>
 
+<template>
     <nav class="absolute left-[4em] z-10 flex justify-between w-[90%] mx-auto mt-4">
         <div>
-            <a href="/" class="uppercase select-none text-white">coffee</a>
+            <RouterLink to="/" class="uppercase select-none text-white">coffee</RouterLink>
         </div>
 
         <div>
             <ul class="hidden md:flex gap-x-12">
                 <li>
-                    <a href="" class="uppercase text-white hover:underline hover:text-white/60">Home</a>
+                    <RouterLink to="/" class="uppercase text-white hover:underline hover:text-white/60">Home</RouterLink>
                 </li>
                 <li>
-                    <a href="" class="uppercase text-white hover:underline hover:text-white/60">Coffee</a>
+                    <RouterLink to="/coffee" class="uppercase text-white hover:underline hover:text-white/60">Coffee</RouterLink>
                 </li>
                 <li>
-                    <a href="" class="uppercase text-white hover:underline hover:text-white/60">Services</a>
-                </li>
-                <li>
-                    <a href="" class="uppercase text-white hover:underline hover:text-white/60">About</a>
-                </li>
-                <li>
-                    <a href="" class="uppercase text-white hover:underline hover:text-white/60">Contact</a>
+                    <RouterLink to="/about" class="uppercase text-white hover:underline hover:text-white/60">About</RouterLink>
                 </li>
             </ul>
         </div>
