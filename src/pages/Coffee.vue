@@ -12,9 +12,9 @@
     import { ref } from 'vue';
 
     const tabs = ref([
-            {label: 'Buy Coffee Beans', component: CoffeeBeans},
-            {label: 'Coffee Flavoured Drinks', component: FlavouredDrinks},
-            {label: 'Coffee Package Delivery', component: PackageDelivery}
+        {label: 'Coffee Flavoured Drinks', component: FlavouredDrinks},
+        {label: 'Coffee Package Delivery', component: PackageDelivery},
+        {label: 'Buy Coffee Beans', component: CoffeeBeans}
         ]);
     
     const currentTabs = ref(tabs.value[0]);

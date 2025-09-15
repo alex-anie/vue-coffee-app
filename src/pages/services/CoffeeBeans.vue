@@ -1,3 +1,12 @@
+<script setup lang="ts">
+import ProductList from '@/components/layouts/ProductList.vue';
+import { coffeeBeansData } from '../../../data/coffeeBeans';
+import { ref } from 'vue';
+
+const coffeeBeans = ref(coffeeBeansData);
+
+</script>
+
 <template>
-    <p>Coffee Beans Package</p>
+    <ProductList :items="coffeeBeans" />
 </template>
