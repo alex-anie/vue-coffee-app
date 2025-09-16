@@ -4,7 +4,7 @@ import { packageDeliveryData } from '../../../data/packageDelivery';
 import Footer from '@/components/layouts/Footer.vue';
 import ProductList from '@/components/layouts/ProductList.vue';
 
-    const packageDeliveries = ref(packageDeliveryData);
+const packageDeliveries = ref(packageDeliveryData);
 
 </script>
 
