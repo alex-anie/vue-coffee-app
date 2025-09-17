@@ -14,7 +14,7 @@
 <template>
     <main class="w-[90%] mx-auto mb-10">
         <section class="grid grid-cols-4 gap-5">
-            <RouterLink class="relative h-[28em] group transition-all duration-500 ease-in hover:outline-2 hover:outline-amber-400 rounded-2xl" :to="'/product/' + item.id" v-for="(item, index) in items" :key="index"> 
+            <RouterLink class="relative h-[28em] group transition-all duration-500 ease-in hover:outline-2 hover:outline-amber-400 rounded-2xl" :to="'/' + item.category+ '/' + item.id" v-for="(item, index) in items" :key="index"> 
                 <div class="size-full">
                     <img class="size-full rounded-2xl object-cover bg-top-left" :src="item.image" :alt="item.alt">
                 </div>

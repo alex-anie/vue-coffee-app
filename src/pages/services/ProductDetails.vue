@@ -1,11 +1,27 @@
 <script setup>
-    import { useRoute } from 'vue-router';
     import { coffeeBeansData } from '../../../data/coffeeBeans';
+    import { flavouredDrinksData } from '../../../data/flavouredDrinks';
+    import { packageDeliveryData } from '../../../data/packageDelivery';
 
-    const route = useRoute();
-    const productId = Number(route.params.id);
-    const product = coffeeBeansData.find(item => item.id === productId)
+    const props = defineProps({
+        category: {
+            type: String,
+            required: true
+        },
+        id: {
+            type: String,
+            required: true
+        }
+    });
 
+    const datasets = {
+        coffee: coffeeBeansData,
+        delivery: packageDeliveryData,
+        flavoured: flavouredDrinksData
+    }
+
+    const productList = datasets[props.category] || [];
+    const product = productList.find(item => item.id === Number(props.id));
 </script>
 
 
